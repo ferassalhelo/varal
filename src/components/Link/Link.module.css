@@ -1,0 +1,14 @@
+.link {
+  text-decoration: none;
+  color: var(--main-text-color);
+  font-size: 1.75rem;
+  cursor: pointer;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+.arrow {
+  color: var(--main-text-color);
+  margin-left: 10px;
+  font-size: 1.375rem !important;
+}

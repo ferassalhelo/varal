@@ -1,0 +1,21 @@
+.box {
+  display: flex;
+  cursor: pointer;
+}
+.slider_box {
+  display: none;
+  width: 100%;
+}
+
+.item {
+  width: calc(100% / 3);
+}
+
+@media screen and (max-width: 992px) {
+  .box {
+    display: none;
+  }
+  .slider_box {
+    display: block;
+  }
+}

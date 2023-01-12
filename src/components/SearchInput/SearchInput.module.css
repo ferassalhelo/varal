@@ -1,0 +1,33 @@
+.input_box {
+  display: flex;
+  color: var(--main-text-color);
+  font-weight: 900;
+  border: 2px solid var(--main-text-color);
+  border-radius: 5px;
+  width: 430px;
+  font-size: 1.5rem;
+  margin-left: auto;
+  align-items: center;
+  padding: 12px;
+  margin-top: 130px;
+}
+
+.input {
+  border: none;
+  outline: none;
+  padding-left: 20px;
+  flex-grow: 2;
+  font-size: 1.5rem;
+}
+
+::placeholder {
+  color: var(--main-text-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .input_box {
+    width: 100%;
+  }
+}

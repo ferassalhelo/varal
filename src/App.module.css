@@ -1,0 +1,111 @@
+.secondary_text {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 1.875rem;
+  text-align: center;
+  max-width: 830px;
+  margin: auto;
+}
+
+.section_titeles,
+.section_titeles2 {
+  font-size: 2.25rem;
+  position: relative;
+  text-align: center;
+  max-width: 700px;
+  margin: 4rem auto;
+}
+
+.section_titeles::after,
+.section_titeles2::after {
+  content: "";
+  position: absolute;
+  top: 44px;
+  display: block;
+  width: 200px;
+  height: 7px;
+  background-color: var(--orange-bg-color);
+  text-align: center;
+  left: calc(50% - 100px);
+}
+
+.section_titeles2::after {
+  width: 475px;
+  left: calc(50% - 225px);
+}
+
+.xl_text {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.ways_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 4vw;
+  margin-bottom: 8vw;
+  margin: 7rem 0;
+  margin-top: 3rem;
+}
+.way_item {
+  width: calc(100% / 2.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 90px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .section_titeles::after,
+  .section_titeles2::after {
+    top: 38px;
+    width: 160px;
+    left: calc(50% - 80px);
+  }
+  .section_titeles2::after {
+    width: 425px;
+    left: calc(50% - 200px);
+  }
+}
+
+.foot_text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--secondary-text-color);
+}
+div > section > div:nth-child(2) {
+  justify-content: flex-start;
+}
+@media only screen and (max-width: 1200px) {
+  .section_titeles::after,
+  .section_titeles2::after {
+    top: 32px;
+    width: 140px;
+    left: calc(50% - 70px);
+  }
+  .section_titeles2::after {
+    width: 300px;
+    left: calc(50% - 145px);
+  }
+}
+@media only screen and (max-width: 991px) {
+  .way_item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section_titeles::after,
+  .section_titeles2::after {
+    top: 29px;
+    width: 120px;
+    left: calc(50% - 60px);
+  }
+
+  .section_titeles2::after {
+    width: 300px;
+    left: calc(50% - 143px);
+  }
+}

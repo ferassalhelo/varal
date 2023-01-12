@@ -1,0 +1,30 @@
+.main_button {
+  background-color: var(--main-bg-color);
+  padding: 5px 10px;
+  color: var(--white-text-color);
+  border: 1px solid var(--main-bg-color);
+  cursor: pointer;
+  border-radius: 7px;
+  font-weight: 600;
+  font-family: "Lexend Deca";
+  margin: 5px 0;
+}
+
+.main_button:hover {
+  color: var(--main-text-color);
+  background-color: var(--white-bg-color);
+  border: 1px solid var(--main-bg-color);
+}
+
+.light_button {
+  color: var(--main-text-color);
+  background-color: var(--white-bg-color);
+  border: 1px solid var(--main-bg-color);
+  font-family: "Lexend Deca";
+}
+
+.light_button:hover {
+  color: var(--white-text-color);
+  background-color: var(--main-bg-color);
+  border-color: var(--white-text-color);
+}

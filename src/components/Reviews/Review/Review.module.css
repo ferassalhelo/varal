@@ -1,0 +1,69 @@
+.contanie {
+  margin: 2rem 0;
+}
+.box {
+  display: flex;
+  width: 100%;
+}
+.item1 {
+  width: calc(100% / 0.8);
+}
+.img_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  border: 2px solid var(--main-text-color);
+  border-radius: 50%;
+}
+.item2 {
+  width: calc(100% / 0.2);
+  padding-left: 55px;
+}
+.text,
+.name {
+  font-size: 1.625rem;
+  font-weight: 600;
+  margin: 0;
+  position: relative;
+}
+
+.text::before {
+  content: "‘‘";
+  font-weight: 600;
+  font-size: 3.125rem;
+  top: 0;
+  position: absolute;
+  left: -30px;
+}
+.text::after {
+  content: ",,";
+  font-weight: 600;
+  font-size: 3.125rem;
+  line-height: 0;
+  margin-left: 10px;
+}
+.box_active {
+  background-color: var(--main-bg-color);
+  color: var(--white-text-color);
+}
+
+.box_active .img_box {
+  border-color: var(--white-text-color);
+}
+
+.line_box {
+  width: 80%;
+  height: 4px;
+  background-color: var(--main-bg-color);
+}
+.name_box {
+  display: flex;
+  width: 100%;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+.name {
+  font-weight: 700;
+}

@@ -1,0 +1,96 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  overflow: hidden;
+  padding: 0.5rem 8vw;
+  background-color: var(--white-bg-color);
+  z-index: 999;
+  display: block;
+}
+.show {
+  height: auto;
+}
+
+.logo {
+  padding: 10px 0;
+  height: 100%;
+  background-color: var(--white-bg-color);
+}
+
+.xl_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  font-size: 1.3rem;
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.itemList {
+  border-radius: 5px;
+
+  list-style: none;
+  cursor: pointer;
+  height: 100%;
+  display: block;
+}
+
+.itemList a {
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 8px 15px;
+  display: block;
+}
+
+.itemList:hover {
+  background: rgb(245, 245, 245);
+}
+
+.itemList:first-child {
+  color: black;
+}
+
+.btn {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .xl_box {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .list {
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgb(249, 249, 249);
+    margin-top: 20px;
+  }
+  .itemList {
+    padding: 20px 15px;
+    width: 100%;
+  }
+  .btn {
+    background: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 8vw;
+    font-size: 26px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,16 @@
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.title_line {
+  display: inline-block;
+  width: 8px;
+  height: 80px;
+  margin-right: 40px;
+  background-color: var(--main-bg-color);
+}
+
+.title {
+  font-size: 1.625rem;
+}
